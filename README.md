@@ -6,7 +6,5 @@ props.put("partitioner.class", "kafka.demo.PartitionerDemo");
 String key=(String)obj;  
 int offset = key.lastIndexOf('.');  
 if(offset>0){  
-partition = Integer.parseInt(key.substring(offset + 1)) % numPartitions；
+partition = Integer.parseInt(key.substring(offset + 1)) % numPartitions;
 }
-
-
